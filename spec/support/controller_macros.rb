@@ -10,3 +10,4 @@ module ControllerMacros
     end
 
   end
+

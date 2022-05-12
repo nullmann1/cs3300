@@ -8,6 +8,7 @@ RSpec.feature "Projects", type: :feature do
       visit new_project_path
       within("form") do
         fill_in "Title", with: "Test title"
+
       end
     end
 
@@ -36,6 +37,7 @@ RSpec.feature "Projects", type: :feature do
       end
       click_button "Update Project"
       expect(page).to have_content("Project was successfully updated")
+
     end
 
     scenario "should fail" do
